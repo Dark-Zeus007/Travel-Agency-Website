@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <div class="direct">
+    <h2 style="color:white;">CLICK HERE TO GO TO HOME PAGE </h2><a style="text-decoration:none;"href="index.html"><h4 style="color:#05aefc;">home</h4></a>
+   
+    
+    <meta charset="UTF-8">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="style-Arrangement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        // Validate my form
+        function validateForm() {
+            //checking the firstname
+            validateName('firstname');
+
+            //check email
+            validateEmailAddress('email');
+
+            //check message text
+            validateName('message');
+
+        }
+
+        // validate my email
+        function validateEmailAddress(email) {
+            //check email
+            var email = document.getElementById(email);
+            if (email.value === "") {
+                alert("Your Email Address must be filled out");
+                return false;
+            } else {
+                //validate email
+                var regExpEmail =
+                    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (!regExpEmail.test(email.value)) {
+                    alert("Email is not in correct format");
+                    email.focus();
+                    return false;
+                }
+            }
+        }
+
+        // validate the input name
+        function validateName(targetId) {
+            //checking the firstname
+            var name = document.getElementById(targetId);
+            var regExpFirstName = /^[A-Z][a-z]+$/;
+            if (name.value === "") {
+                alert(targetId+" must be filled out");
+                return false;
+            } else {
+                if (!regExpFirstName.test(name.value)) {
+                    alert("Please enter "+targetId+" in correct format");
+                    name.focus();
+                    return false;
+                }
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+
+        </header>
+        <!-- HEADER LOGO END -->
+
+
+        <article class="main">
+            <div class="w3-content" style="max-width:1532px; padding: 15px 15px 15px 15px; margin-top: 20px;">
+                <br>
+
+                <!-- ABOUT US & LOCATION-->
+                <div class="w3-row-padding" id="about" style="box-shadow: 0 0 15px #3f51b5; margin-top: 30px; padding: 0px 20px 30px 40px;">
+                    <div>
+                        <p style="color: #344a71; font-size: 27pt; text-align: center; margin-top: 25px" >BHUPEN TRAVELS NEW DELHI</p>
+                    </div>
+
+                    <div style="display: flex">
+                        <!-- MAP BEGINNING -->
+                        <div id="map" style="height:500px; width: 100%; margin-top: 25px; margin-right: 20px"></div>
+                        <!-- MAP END -->
+                        <br><br>
+                        <div class="form-style-6" style="width: 80%; height: 500px; margin-right: 10px;">
+                            <h1>Contact Us</h1>
+                            <div style=" font-size: 13pt">
+                                <form method="post" onsubmit="return validateForm();">
+
+                                    <input type="text" name="field1" required id="name" value="Name" placeholder="Your Name">
+                                    <input type="email" name="field2" required id="email" value="Email" placeholder="Email Address">
+                                    <textarea name="field3" id="message" required placeholder="Type your Message">Type your Message</textarea>
+                                    <button type="submit" value="Send">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+             <!-- End page content -->
+            </div>
+            <br><br><br>
+
+        </article>
+
+        <!-- LEFT BEGINNING -->
+        <aside class="aside aside-1" style="color: #FFFFFF">.</aside>
+        <!-- LEFT END
+
+        <!-- LEFT BEGINNING -->
+        <aside class="aside aside-2" style="color: #FFFFFF">.</aside>
+        <!-- LEFT END -->
+
+
+
+        <!-- FOOTER BEGINNING -->
+        <footer class="footer">
+
+
+            <!-- FOOTER CENTER -->
+            <div class="footer_center">
+                <div class="text">
+                    <p>CONTACT INFORMATION</p>
+                    <a name="contact"></a>
+                    <p style="margin-top: 0; padding-top: 5px;"><i></i> lakshmi nagar 32, 11000 rajendra road, New Delhi</p>
+                    <p><i class="phone"></i> <a href="tel:+381623340023">+381 623 340 023</a></p>
+                    <p><i class="mail"></i> <a href="mailto:office@bhupentravels.com">office@bhupentravels.com</a></p>
+                    <p>BHUPEN TRAVELS</p>
+                </div>
+            </div>
+            <!-- END / FOOTER CENTER -->
+
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+
+    <!-- MAP FOR THE LOCATION BEGINNING-->
+    <script>
+        function myMap() {
+            const mapCanvas = document.getElementById("map");
+            const myCenter = new google.maps.LatLng(28.6372, 77.2756);
+            const mapOptions = {center: myCenter, zoom: 17  };
+            const map = new google.maps.Map(mapCanvas, mapOptions);
+            const marker = new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.BOUNCE
+            });
+            marker.setMap(map);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwKgLSdSZEVdxRKKlImZu9GR77Gc_T9HQ&callback=myMap"></script>
+
+</body>
+</html>

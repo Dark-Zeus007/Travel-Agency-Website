@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat+Alternates:700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #070C1E;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #234099;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.nav-link {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.nav-link, .bar-icon {
+    color:white;
+    padding-top: 5px;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+/* Navbar */
+
+/* Landing Page */
+.landing-page, .contact {
+    background-image: url("images/bhupen.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.landing-page {
+    height: 100vh;
+}
+
+.landing-text {
+    margin-top: 30px;
+    padding: 25px 25px;
+}
+
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color:white;
+    text-shadow: 2px 2px 1px #234099;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.landing-text > h2 {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Landing Page */
+/* home*/
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 0px;
+}
+
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+
+  }
+  
+        
+  
+
+/* Cities container */
+.cities {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bdc5e0), color-stop(#d3c3e0), color-stop(#eac1d7), color-stop(#f9c1c7), to(#fdc6b4));
+    background-image: -o-linear-gradient(top, #bdc5e0, #d3c3e0, #eac1d7, #f9c1c7, #fdc6b4);
+    background-image: linear-gradient(to bottom, #bdc5e0, #d3c3e0, #eac1d7, #f9c1c7, #fdc6b4);
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    overflow: auto;
+}
+
+.cities > h2 {
+    color: #234099;
+    margin-top: 35px;
+    padding-bottom: 15px;
+}
+
+.cities-content {
+    max-width: 2000px;
+    margin: auto;
+}
+
+.cities-images {
+    background-size: cover;
+    min-height: 300px;
+    width: auto;
+}
+
+.city-div {
+    border: 2px solid #234099;
+    margin: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.city-div:hover {
+    border: 2px solid #285871;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.cities-images ~ p {
+    color: #234099;
+    margin: 5px;
+}
+
+#aagra {
+    background-image: url("images/aagra.jpg");
+}
+
+#goa {
+    background-image: url("images/goa.jpg");
+}
+
+#jaipur {
+    background-image: url("images/jaipur.jpg");
+}
+
+#manali {
+    background-image: url("images/manali.jpg");
+}
+
+#hyd  {  background-image: url("images/hyd.jpg");
+}
+#mumbai{
+    background-image: url("images/mumbai.jpg");
+}
+#newdelhi {
+        background-image: url("images/newdelhi.jpg");
+
+}
+
+
+/* Cities container */
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1090;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(33, 79, 104, 0.9);
+}
+
+.modal-content {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bdc5e0), color-stop(#d3c3e0), color-stop(#eac1d7), color-stop(#f9c1c7), to(#fdc6b4));
+    background-image: -o-linear-gradient(top, #bdc5e0, #d3c3e0, #eac1d7, #f9c1c7, #fdc6b4);
+    background-image: linear-gradient(to bottom, #bdc5e0, #d3c3e0, #eac1d7, #f9c1c7, #fdc6b4);
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    min-height:450px; /* prevents the map from being taller than its container */
+}
+
+.modal-container, .modal-row {
+    height: 100%;
+}
+
+.modal-content h2 {
+    color: #234099;
+    padding-bottom: 10px;
+}
+
+.modal-text {
+    text-align: justify;
+}
+
+.modal-map {
+    min-height: 300px;
+    height: 80%;
+    max-height: 500px;
+}
+
+.modal-btn {
+    text-align: center;
+    padding: 10px 15px;
+    color: #FB4305;
+    background-color: #234099;
+}
+
+.modal-btn:hover {
+    text-decoration: none;
+    color: #FB4305;
+    background-color: #15265B;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.modal-close {
+    color: #234099;
+    float: right;
+    font-size: 35px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.modal-close:hover {
+    color: #15265B;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+/* Modals */
+
+/* packages border settings*/
+
+.bg-3{
+  border: 5px solid red;
+height: 280px;
+    background-color: rgba(35, 64, 153, 0.40);
+margin-left: 5px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  margin-top: 50px;
+}
+
+
+/* Contact container */
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(35, 64, 153, 0.40);
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px 1px #234099;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.contact-content h2 {
+    padding: 30px;
+}
+
+.input-field {
+    border: 1px solid #FB4305;
+}
+
+.form-btn {
+    color:  #FB4305;
+    background-color: #234099;
+    margin-bottom: 15px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.form-btn-sent {
+    color: #234099;
+    background-color: #FB4305;
+    margin-bottom: 15px;
+
+}
+
+.form-btn:hover {
+    color:  #FB4305;
+    background-color: #15265B;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+/* Contact container */
+
+/* Footer */
+.page-footer {
+    display: block;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #234099;
+border-top: 0px;
+flex-shrink: 0;
+    
+}
+
+.footer-container {
+
+    text-align: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        flex-shrink: 0;
+
+}
+
+.sm-icons {
+    color: #FB4305;
+    padding: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.sm-icons:hover,
+.navbar-brand:hover,
+.nav-link:hover {
+    color:white;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+/* Footer */
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 991px) {
+
+    .landing-page, .contact {
+        background-attachment: scroll;
+    }
+
+    .modal-text {
+        padding-top: 10px;
+    }
+
+}
+
+/*Prevents the contact + footer section from being only viewport height on small-medium screens in landscape mode */
+@media only screen and (min-height: 825px) {
+
+    .landing-text {
+        padding: 75px 100px;
+    }
+
+    .contact {
+        height: 80vh;
+    }
+
+    footer {
+        height: 20vh;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .modal-content {
+        height: 80%;
+    }
+    
+    .modal-content h2 {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 2560px) {
+   
+    .cities {
+        height: 100vh;
+    }
+
+}

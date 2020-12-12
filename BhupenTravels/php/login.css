@@ -1,0 +1,43 @@
+    body
+	{
+	 background-color:black;
+	}
+	 ::placeholder { 
+     color:white; 
+     }
+	.Loginbox
+	{
+	 position:absolute;
+	 top:210px;
+	 left:575px;
+	 color:white;
+	 width:175px;
+	 height:200px;
+	}
+	.Loginbox h1
+	 {
+	   width:80;
+	   font-size: 40x;
+	   border-bottom-style:solid;
+	   border-bottom-color:black;
+	 }
+	 .textbox input
+	 {
+	   width:175px;
+	   height:23px;
+	   color:white;
+	   background:none;
+	   border:2px solid blue;
+	   border-radius:10px;
+	     
+	 } 
+	button
+	 {
+       color:white;        
+	   background:none;
+       width:172px;	
+       height:20px;
+       border-radius: 5px;
+       border: 2px solid black;	
+       cursor:pointer;	   
+	 }

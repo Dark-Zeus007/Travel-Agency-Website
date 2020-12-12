@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1.0, user-scalable=no" /> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Bhupen Travels</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- /Favicon -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- /Stylesheets -->
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <a class="navbar-brand" href="#lp-div">Bhupen Travels</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars bar-icon"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinations-div">Destinations</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#packages-div">Packages </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-div">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /Navigation Bar -->
+    <!-- Landing Page -->
+    <div class="container-fluid landing-page" id="lp-div">
+      <div class="overlay">&nbsp;</div>
+      <div class="row">
+        <div class="col-12 landing-text">
+          <h1>WELCOME TO BHUPEN TRAVELS</h1>
+          <h2>
+           Your experience is our main goal.
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- /Landing Page -->
+
+    <!--home-->
+
+    <div class="container-fluid bg-2 text-center" id="home">
+  <h3>About Bhupen Travel </h3>
+  <br>
+  <p>WHAT WE DO</p>
+<p>MOVING YOU WITH LOVE<br>
+Bhupen Group is a dynamic, well established enterprise in the fields of travel, logistics
+ and hospitality. Our moto is to give you a better experiance of travelling in the top 
+ places in india.Travelling families from one place to anoyher with love.</p><br>
+</div>
+<!--home-->
+
+    <!-- Destinations section with clickable images and modals -->
+    <div class="container-fluid cities" id="destinations-div">
+      <h2>Destinations</h2>
+      <p>If you have any preferences, please contact us using the form below and we will be happy to accommodate you!</p>
+      <div class="row cities-content">
+        <!-- Agra -->
+        <div class="col-md-6 col-lg-4">
+          <div class="city-div" data-modal="modal-agra">
+            <div class="cities-images" id="aagra"></div>
+            <p>AGRA</p>
+          </div>
+          <!-- Agra modal with map and text -->
+          <div id="modal-agra" class="modal">
+            <div class="modal-content">
+              <div class="container modal-container">
+                <span class="modal-close"><i class="fas fa-times"></i></span>
+                <h2>AGRA</h2>
+                <div class="row modal-row">
+                  <div id="map-agra" class="col-md-6 modal-map"></div>
+                  <div class="col-md-6 modal-text">
+                    <p>
+                      Agra is a city in the northern state of Uttar Pradesh, India.
+                       The city is famous for being the capital of the Mughal emperors
+                        from 1526 to 1658. It is a major tourist destination for its many
+                         Mughal-era buildings such as Tāj Mahal, Agra Fort and Fatehpūr Sikrī
+                         , all three of which are UNESCO World Heritage Sites.
+                    </p>
+                    <a href="#contact-div" class="modal-btn">Contact us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Agra modal with map and text -->
+        </div>
+        <br>
+         <br>
+      <!-- /Agra -->
+
+        <!-- Goa -->
+        <div class="col-md-6 col-lg-4">
+          <div class="city-div" data-modal="modal-goa">
+            <div class="cities-images" id="goa"></div>
+            <p>GOA</p>
+          </div>
+          <!-- Goa modal with map and text -->
+          <div id="modal-goa" class="modal">
+            <div class="modal-content">
+              <div class="container modal-container">
+                <span class="modal-close"><i class="fas fa-times"></i></span>
+                <h2>GOA</h2>
+                <div class="row modal-row">
+                  <div id="map-goa" class="col-md-6 modal-map"></div>
+                  <div class="col-md-6 modal-text">
+                    <p>
+                      The state of Goa, in India, is famous for its beaches and places of worship, 
+                      and tourism is its primary industry. Tourism is generally focused on the coastal
+                       areas of Goa, with decreased tourist activity inland. Foreign tourists, mostly 
+                       from Europe, arrive in Goa in winter, whilst the summer and monsoon seasons see
+                        many Indian tourists. Goa handled 2.29% of all foreign tourist arrivals in the 
+                        country in 2011.This relatively small state is situated on the western
+                         coast of India, between the borders of Maharashtra and Karnataka, and is better
+                          known to the world as a former Portuguese enclave on Indian soil. Tourism is said
+                           to be the backbone of Goa's economy.
+                    </p>
+                    <a href="#contact-div" class="modal-btn">Contact us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Goa modal with map and text -->
+        </div>
+        <!-- /Goa -->
+
+        <!-- manali -->
+        <div class="col-md-6 col-lg-4">
+          <div class="city-div" data-modal="modal-manali">
+            <div class="cities-images" id="manali"></div>
+            <p>MANALI</p>
+          </div>
+          <!-- Manali modal with map and text -->
+          <div id="modal-manali" class="modal">
+            <div class="modal-content">
+              <div class="container modal-container">
+                <span class="modal-close"><i class="fas fa-times"></i></span>
+                <h2>MANALI</h2>
+                <div class="row modal-row">
+                  <div id="map-manali" class="col-md-6 modal-map"></div>
+                  <div class="col-md-6 modal-text">
+                    <p>
+                     Manali is the last town after Kullu (Kullu is the district head quarters of
+                     machal Pradesh). Manali is the gateway to Lahaul Spiti which is famous for 
+                     Himalayan valleys. Manali is blessed with rivers (mainly the giant river, Beas)
+                      almost surrounding from all the places, snow covered peaks everywhere
+                    </p>
+                    <a href="#contact-div" class="modal-btn">Contact us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Manali modal with map and text -->
+        </div>
+        <!-- / Manali -->
+
+        <!-- Hyderabad -->
+        <div class="col-md-6 col-lg-4">
+          <div class="city-div" data-modal="modal-hyderabad">
+            <div class="cities-images" id="hyd"></div>
+            <p>HYDERABAD</p>
+          </div>
+          <!-- Hyderabad modal with map and text -->
+          <div id="modal-hyderabad" class="modal">
+            <div class="modal-content">
+              <div class="container modal-container">
+                <span class="modal-close"><i class="fas fa-times"></i></span>
+                <h2>HYDERABAD</h2>
+                <div class="row modal-row">
+                  <div id="map-hyderabad" class="col-md-6 modal-map"></div>
+                  <div class="col-md-6 modal-text">
+                    <p>
+                      Hyderabad was found on the banks of Musi river in 1591. Today that area is known as
+                       old city where Mecca Masjid and Hussain Sagar Lake exist. The area has many official 
+                       buildings and that area is very old. From the recent time, Hyderabad has been merged with
+                        Secunderabad.
+                    </p>
+                    <a href="#contact-div" class="modal-btn">Contact us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Hyderabad modal with map and text -->
+        </div>
+        <!-- /Hyderabad -->
+
+        <!-- Mumbai -->
+        <div class="col-md-6 col-lg-4">
+          <div class="city-div" data-modal="modal-mumbai">
+            <div class="cities-images" id="mumbai"></div>
+            <p>MUMBAI</p>
+          </div>
+          <!-- Mumbai modal with map and text -->
+          <div id="modal-mumbai" class="modal">
+            <div class="modal-content">
+              <div class="container modal-container">
+                <span class="modal-close"><i class="fas fa-times"></i></span>
+                <h2>MUMBAI</h2>
+                <div class="row modal-row">
+                  <div id="map-mumbai" class="col-md-6 modal-map"></div>
+                  <div class="col-md-6 modal-text">
+                    <p>
+                     Mumbai (previously known as Bombay until 1996) is a natural harbor on the
+                      west coast of India, and is the capital city of Maharashtra state. It is
+                       India's largest city, and one of the world's most populous cities. 
+                       It is the financial capital of India. The city is the second most-populous
+                        in the world.
+                    </p>
+                    <a href="#contact-div" class="modal-btn">Contact us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /mumbai modal with map and text -->
+        </div>
+        <!-- /Mumbai-->
+
+        <!-- Newdelhi-->
+        <div class="col-md-6 col-lg-4">
+          <div class="city-div" data-modal="modal-newdelhi">
+            <div class="cities-images" id="newdelhi"></div>
+            <p>NEWDELHI</p>
+          </div>
+          <!-- Newdelhi modal with map and text -->
+          <div id="modal-newdelhi" class="modal">
+            <div class="modal-content">
+              <div class="container modal-container">
+                <span class="modal-close"><i class="fas fa-times"></i></span>
+                <h2>NEWDELHI</h2>
+                <div class="row modal-row">
+                  <div id="map-newdelhi" class="col-md-6 modal-map"></div>
+                  <div class="col-md-6 modal-text">
+                    <p>
+                      Delhi is the capital city of India and is regarded as the heart of the 
+                      nation. The city is popular for its enriched culture and heritage. 
+                      The city hosts some famous historical monuments and is developing with
+                       the passing of time.
+                    </p>
+                    <a href="#contact-div" class="modal-btn">Contact us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Newdelhi modal with map and text -->
+        </div>
+        <!-- /Newdelhi --> 
+                              
+                    
+      </div>
+    </div>
+    <!-- /Destinations section with clickable images and modals -->
+
+<!-- packages-->
+
+<div class="container-fluid bg-2 text-center" id="packages-div">
+<h3>TOUR PACKAGES</h3>
+<br>
+
+<!--agra package-->
+
+<div class="row">
+  <div class="col-sm-4">
+       <p><strong>Agra</strong></p>
+      <img src="images/aagra.jpg" height="255" width="255" alt="San Francisco">
+  </div>
+  <br>
+  <br>
+        <div class="col-sm-4 bg-3">
+      <p>1 to 5 Days   = Rs 6000</p>
+      <p>6 to 10 Days  = Rs 10000</p>
+      <p>10 to 15 Days = Rs 14000</p>
+     <p>   Places: Taj Mahal, Agra Fort, Sikandara
+     Jama Masjid,Fatehpur Sikri</p>
+    </div>  
+      <br>
+      <br>
+  
+<div class="row">
+  <div class="col-sm-4">
+       <p><strong>Goa</strong></p>
+      <img src="images/goa.jpg" height="255" width="255" alt="San Francisco">
+  </div>
+        <div class="col-sm-4 bg-3">
+      <p>1 to 5 Days   = Rs 8000 </p>
+      <p>6 to 10 Days  = Rs 12000</p>
+      <p>11 to 15 Days = Rs 16000</p>
+     <p>   Places: Calangute Beach,Chapora Fort,Dudhsagar Falls. 
+           Baga Beach,Anjuna Wednesday Market,Basilica of Bom Jesus.
+</p>
+    </div>  
+      
+      <div class="row">
+  <div class="col-sm-4">
+       <p><strong>Manali</strong></p>
+      <img src="images/manali.jpg" height="255" width="255" alt="San Francisco">
+  </div>
+        <div class="col-sm-4 bg-3">
+      <p>1 to 5 Days   = Rs 9000</p>
+      <p>6 to 10 Days  = Rs 12500</p>
+      <p>11 to 15 Days = Rs 16000</p>
+     <p>   Places: Hadimba Temple,Museum Of Himachal Culture And Folk Art,
+            Tibetan Monasteries,Manu Temple,Club House,Vashisht Hot Water Springs.
+            Maa Sharvari Temple,Nehru Kund.</p>
+    </div>  
+      </div>
+</div>
+  <!--hyderabad package-->
+
+  <div class="row">
+  <div class="col-sm-4">
+       <p><strong>Hyderabad</strong></p>
+      <img src="images/hyd.jpg" height="255" width="255" alt="San Francisco">
+  </div>
+        <div class="col-sm-4 bg-3">
+      <p>1 to 5 Days   = Rs 7000</p>
+      <p>6 to 10 Days  = Rs 10000</p>
+      <p>11 to 15 Days = Rs 13000</p>
+     <p>   Places: Charminar,Golconda Fort,Ramoji Film City,Hussain Sagar Lake. 
+           Birla Mandir,Jala Vihar,Chowmahalla Palace,Lumbini Park.</p>
+    </div>  
+    
+    <div class="row">
+  <div class="col-sm-4">
+       <p><strong>Mumbai</strong></p>
+      <img src="images/mumbai.jpg" height="255" width="255" alt="San Francisco">
+  </div>
+        <div class="col-sm-4 bg-3">
+      <p>1 to 5 Days   = Rs 10000</p>
+      <p>6 to 10 Days  = Rs 15000</p>
+      <p>11 to 15 Days = Rs 20000</p>
+     <p>   Places: Gateway of India,Elephanta Caves,Marine Drive.
+           Haji Ali Shrine,Sanjay Gandhi National Park,Markets of Mumbai.
+           Global Vipassana Pagoda,Siddhivinayak Temple.</p>
+    </div>  
+
+<div class="col-sm-4">
+       <p><strong>Newdelhi</strong></p>
+      <img src="images/newdelhi.jpg" height="255" width="255" alt="San Francisco">
+  </div>
+        <div class="col-sm-4 bg-3">
+
+      <p>1 to 5 Days   = Rs 11000</p>
+      <p>6 to 10 Days  = Rs 15000</p>
+      <p>10 to 15 Days = Rs 19000</p>
+      <p> Places: Humayun's Tomb,Hauz Khas Village,Qutub Minar,Red Fort
+         National Zoological Park,India Gate,Lotus Temple,Chandni Chowk.</p>
+    </div>  
+    </div>
+
+
+    <!-- Contact section -->
+    <div class="container-fluid contact" id="contact-div">
+      <div class="contact-overlay">&nbsp;</div>
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <form id="contact-form" onsubmit="return submitForm(this); return false">
+          <h2>Contact us to book now!</h2>
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" class="form-control input-field" id="fullname" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <label for="emailaddress">Email Address</label>
+            <input type="email" name="emailaddress" class="form-control input-field" id="emailaddress" placeholder="Email Address" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="date">Preferred Travel Date</label>
+              <input type="Date" name="dates" class="form-control input-field" id="date" placeholder="Preferred Travel Date">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="nights">Number of Days</label>
+              <input type="number" name="Days" class="form-control input-field" id="Days" placeholder="Number of Days">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea name="comments" class="form-control input-field" id="comments" rows="5" placeholder="Please enter your query here" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark btn-lg form-btn" id="contact-btn">Send!</button>
+        </form>
+        <!-- /Contact Form -->
+      </div>
+    </div>
+  </div>
+    <br>
+    <br>
+    <!-- /Contact section -->
+    <!-- Footer section with social media buttons and copyright -->
+    <footer class="page-footer">
+      <div class="footer-container">
+        <!-- Social media buttons-->
+        <div class="social-media">
+          <div>Join us on social media!</div>
+          <!-- Facebook -->
+          <a target="_blank" href="https://www.facebook.com">
+            <i class="fab fa-facebook-square fa-2x sm-icons"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <!-- /Facebook -->
+          <!-- Twitter -->
+          <a target="_blank" href="https://twitter.com">
+            <i class="fab fa-twitter-square fa-2x sm-icons"> </i>
+            <span class="sr-only">Twitter</span>
+          </a>
+          <!-- /Twitter -->
+          <!-- Instagram -->
+          <a target="_blank" href="https://www.instagram.com">
+            <i class="fab fa-instagram fa-2x sm-icons"> </i>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <!-- /Instagram -->
+          <!-- Pinterest -->
+          <a target="_blank" href="https://www.pinterest.ie">
+            <i class="fab fa-pinterest-square fa-2x sm-icons"> </i>
+            <span class="sr-only">Pinterest</span>
+          </a>
+          <!-- /Pinterest -->
+        </div>
+        <!-- /Social media buttons-->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Bhupen Travels</div>
+        <!-- /Copyright -->
+      </div>
+    </footer>
+  </body>
+</html>
