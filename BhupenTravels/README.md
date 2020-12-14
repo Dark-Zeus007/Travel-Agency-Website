@@ -1,13 +1,7 @@
 
 
-#  Milestone Project 2 - Ishaans Travel Agency  
+#  Milestone Project - Bhupen Travel Agency  
 ----------------------------------------------------------------------------
-
-This is my second milestone project . I named this website called Ishaans Travel Agency.This 
-website mainly for the travellers who wants to visit to India for short vacations.The traveller 
-can find special packages also.
-
-The deployed website can be found [here](https://nagendra0168.github.io/Ishaans-travel-agency/.)
 
 ## UX
 ----------------------------------------------------------------------------------
