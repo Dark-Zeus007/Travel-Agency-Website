@@ -42,7 +42,7 @@ to understand the concept of the website.
 ## Features
 ### Home:
 The main feature for the home page is the Tajmahal image of the city HYDERABAd with title it 
-displayed as WELCOME TO ISHAANS TRAVEL AGENCY. 
+displayed as WELCOME TO BHUPEN TRAVEL AGENCY. 
 Home page is minimal and mostly an introduction to the site.
 
 ### Destinations:
